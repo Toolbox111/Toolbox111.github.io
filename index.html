@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Tool-box</title>
+		<link rel="shortcut icon" href="images/Toolboxlogo.png" />
+		<link rel="stylesheet" type="text/css" href="CSS/left_effect.css"/>
+		<script src="./js/iconfont.js"></script>
+		<!-- <script src="js/Animation.js"></script> -->
+		<link rel="stylesheet" type="text/css" href="CSS/tb_main.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="./CSS/Animation.css"/>
+		<style type="text/css">
+			body {
+				background-color: #f9f9f9;
+				margin: 0 auto;
+			}
+			.Tool_box {
+				width: 100%;
+				/* margin: 0 auto; */
+				display: flex;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="Tool_box">
+			<!-- Tool-box资源小站 -->
+			<div id="Sleft" class="Sleft">
+				<div id="minibutton"class="mini_button" onclick="Telescoping()">
+					<svg class="icon" aria-hidden="true"><use xlink:href="#icon-cebianlan-xiangyoushouqi"></use></svg>
+				</div>
+				<!-- logo部分 -->
+				<div class="Sleft_logo">
+					<a href="#" class="logo" title="回到顶部">
+						<!-- <img src="images/logo2.png" id="Logo2_img" height="auto"> -->
+						<span id="logo_text">Tool-box<br>资源小站</span>
+						<img id="logo_img" src="images/Toolboxlogo.png" >
+					</a>
+				</div>
+				<!-- 菜单部分 -->
+				<div class="Sleft_menu Sleft_menu_action">
+					<ul class="Sleft_ul">
+						<li class="Sleft_li">
+							<a class="Sleft_href_point" href="#">
+								<svg class="icon" aria-hidden="true"><use xlink:href="#icon-tuijian"></use></svg>
+								<span class="Sleft_span">推荐网站</span>
+							</a>
+						</li>
+						<li class="Sleft_li">
+							<a class="Sleft_href_point" href="#study">
+								<svg class="icon" aria-hidden="true"><use xlink:href="#icon-daima"></use></svg>
+								<span class="Sleft_span">学习网站</span>
+							</a>
+						</li>
+						<li class="Sleft_li">
+							<a class="Sleft_href_point" href="#tool">
+								<svg class="icon" aria-hidden="true"><use xlink:href="#icon-gongju"></use></svg>
+								<span class="Sleft_span">工具网站</span>
+							</a>
+						</li>
+						<li class="Sleft_li">
+							<a class="Sleft_href_point" href="#Movies">
+								<svg class="icon" aria-hidden="true"><use xlink:href="#icon-yingshi"></use></svg>
+								<span class="Sleft_span">影视网站</span>
+							</a>
+						</li>
+						<li class="Sleft_li">
+							<a class="Sleft_href_point" href="#picture">
+								<svg class="icon" aria-hidden="true"><use xlink:href="#icon-tupian_huaban"></use></svg>
+								<span class="Sleft_span">图片网站</span>
+							</a>
+						</li>
+						<li class="Sleft_li">
+							<a class="Sleft_href_point" href="#music">
+								<svg class="icon" aria-hidden="true"><use xlink:href="#icon-yinle"></use></svg>
+								<span class="Sleft_span">音乐网站</span>
+							</a>
+						</li>
+						<li class="Sleft_li">
+							<a class="Sleft_href_point" href="#bookmark">
+								<svg class="icon" aria-hidden="true"><use xlink:href="#icon-duxiaoshuo"></use></svg>
+								<span class="Sleft_span">小说网站</span>
+							</a>
+						</li>
+						<li class="Sleft_li">
+							<a class="Sleft_href_point" href="#netdisk">
+								<svg class="icon" aria-hidden="true"><use xlink:href="#icon-yun"></use></svg>
+								<span class="Sleft_span">网盘网站</span>
+							</a>
+						</li>
+						<li class="Sleft_li">
+							<a class="Sleft_href_point" href="#gamepad">
+								<svg class="icon" aria-hidden="true"><use xlink:href="#icon-airudiantubiaohuizhi-zhuanqu_youxi"></use></svg>
+								<span class="Sleft_span">游戏资讯</span>
+							</a>
+						</li>
+						<li class="Sleft_li">
+							<a class="Sleft_href_point" href="#cube">
+								<svg class="icon" aria-hidden="true"><use xlink:href="#icon-component-full2"></use></svg>
+								<span class="Sleft_span">ACG网站</span>
+							</a>
+						</li>
+						<!-- <li class="Sleft_li">
+							<a class="Sleft_href_point" href="#">
+								<svg class="icon" aria-hidden="true"><use xlink:href="#icon-daima"></use></svg>
+								<span class="Sleft_span">学习编程</span>
+							</a>
+						</li> -->
+					</ul>
+				</div>
+				<!-- 底部联系我们 -->
+				<div class="Sleft_bottom">
+					<ul class="Sleft_ul">
+						<li class="Sleft_li">
+							<a class="Sleft_href_point" href="#End">
+								<svg class="icon" aria-hidden="true"><use xlink:href="#icon-7"></use></svg>
+								<span class="Sleft_span">联系我们</span>
+							</a>
+						</li>
+					</ul>
+					<!-- <a href="#" class="logo" title="">
+						<img src="images/logo3.png" id="Logo3_img" height="auto">
+					</a> -->
+				</div>
+			</div>
+			<div class="main">
+				<!-- 开头部分 -->
+				<div class="tb_head">
+					<!-- logo部分 -->
+					<div class="head_text">
+						Tool-box资源小站
+					</div>
+					<!-- 搜索栏 -->
+					<div class="head_search">
+						<form action="https://www.baidu.com/s?wd" method="get" target="_blank" class="head_search_box" autocomplete="off">
+							<input type="text" name="wd" id="head_search_bar" placeholder="&nbsp&nbsp百度一下"/>
+							<button type="submit" id="head_search_button">
+								<i class="fa fa-search"></i>
+							</button>
+						</form>
+					</div>
+				</div>
+				<!-- 搜索栏 -->
+				<!-- <div class="head_search">
+					<form action="https://www.baidu.com/s?wd" method="get" target="_blank" class="head_search_box" autocomplete="off">
+						<input type="text" name="wd" id="head_search_bar" placeholder="&nbsp&nbsp百度一下"/>
+						<button type="submit" id="head_search_button">
+							<i class="fa fa-search"></i>
+						</button>
+					</form>
+				</div> -->
+				<!-- 推荐栏 -->
+				<div class="tb_recommend">
+					<h2 class="recommend_text">
+						<i class="fa fa-internet-explorer" id="i_browse"></i>
+						推荐网站
+					</h2>
+					<!-- 推荐卡片 -->
+						<div class="recommend_card">
+							<a href="https://www.runoob.com/" target="_blank" class="recommend_href" title="菜鸟教程">
+								<div class="recommend_body">
+									<div class="recommend_img_box"><img src="images/runoob.jpeg" id="card_img" height="auto"></div>
+								</div>
+								<div class="recommend_info card_info">
+									<div class="recommend_name info_name"><strong>菜鸟教程</strong></div>
+									<div class="recommend_introduce">
+										<p>菜鸟教程提供了免费的基础编程技术教程，包括了HTML、CSS、Javascript、PHP、C、Python等各种基础编程教程，
+										也提供了大量的在线实例，通过实例，可以更好地帮助学者学习如何建站。
+										<br>菜鸟教程作为一个基础编程教程网站，在互联网上广为人知，
+										其提供的高质量教程，帮助了无数"准码农"踏入编程门槛，收获了大量好评。</p>
+									</div>
+								</div>
+							</a>
+							<a href="https://www.csdn.net/" target="_blank" class="recommend_href" title="CSDN">
+								<div class="recommend_body">
+									<div class="recommend_img_box"><img src="images/CSDN.png" id="card_img" height="auto"></div>
+								</div>
+								<div class="recommend_info card_info">
+									<div class="recommend_name info_name"><strong>CSDN</strong></div>
+									<div class="recommend_introduce">
+										<p>CSDN是全球知名中文IT技术交流平台,创建于1999年,包含原创博客、精品问答、职业培训、技术论坛、资源下载等产品服务,提供原创、优质、完整内容的专业IT技术开发社区。
+										<br>专业的中文IT技术社区： CSDN.NET；新媒体矩阵微信公众号：
+										CSDN资讯、程序人生、GitChat、CSDN学院、AI科技大本营、区块链大本营、CSDN云计算、GitChat精品课、人工智能头条、CSDN企业招聘；
+										IT技术培训学习平台： CSDN学院；技术知识移动社区： GitChat；IT人力资源服务：科锐福克斯；高校IT技术学习成长平台：高校俱乐部。</p>
+									</div>
+								</div>
+							</a>
+							<a href="https://greasyfork.org/zh-CN/scripts" target="_blank" class="recommend_href" title="油猴">
+								<div class="recommend_body">
+									<div class="recommend_img_box"><img src="images/greasyfork.png" id="card_img" height="auto"></div>
+								</div>
+								<div class="recommend_info card_info">
+									<div class="recommend_name info_name"><strong>油猴</strong></div>
+									<div class="recommend_introduce">
+										<p>Tampermonkey 是第一个可以用来让 Chrome 支持更多 UserScript 的 Chrome 扩展，
+										它可以加入更多的 Chrome 本身不支持的用户脚本功能，比如 GM_registerMenuCommand 和 GM_xmlhttpRequest 这两个函数。
+										<br>安装该扩展之后，再安装 Userscript 的时候还会拦截原来的对话框，并提供一个新的对话框。</p>
+									</div>
+								</div>
+							</a>
+							<a href="https://zh.moegirl.org.cn" target="_blank" class="recommend_href" title="萌娘百科">
+								<div class="recommend_body">
+									<div class="recommend_img_box"><img src="images/moegirl.png" id="card_img" height="auto"></div>
+								</div>
+								<div class="recommend_info card_info">
+									<div class="recommend_name info_name"><strong>萌娘百科</strong></div>
+									<div class="recommend_introduce">
+										<p>萌娘百科网（moegirl.org.cn）下各语言站点，是泛ACGN向Wiki（百科）站点，主要收录Anime（动画）、
+										Comic（漫画）、Game（游戏）、Novel（轻小说）及相关网络文化，旗下同时运营有萌娘文库、萌娘共享等姊妹项目
+										<br>萌娘百科于2010年10月11日开站，最初名为“绿坝娘wiki”，后来改名为“中华萌娘小百科”，2011年5月1日简化为“萌娘百科”。
+										至2015年，萌娘百科已收录了超过一万篇条目。2016年，萌娘百科收录的条目数量达到约两万条。2019年，萌娘百科的条目数量达约四万条。</p>
+									</div>
+								</div>
+							</a>
+							<!-- <a href="https://www.runoob.com/" target="_blank" class="card_href" title="菜鸟驿站">
+								<div class="recommend_body card_body">
+									<div class="card_img_box"><img src="images/runoob.jpeg" id="card_img" height="auto"></div>
+									<div class="card_info">
+										<div class="info_name info_text"><strong>菜鸟驿站</strong></div>
+										<p class="info_describe info_text">菜鸟教程提供了基础编程技术教程</p>
+									</div>
+								</div>
+							</a>
+							<a href="https://www.runoob.com/" target="_blank" class="card_href" title="菜鸟驿站">
+								<div class="recommend_body card_body">
+									<div class="card_img_box"><img src="images/runoob.jpeg" id="card_img" height="auto"></div>
+									<div class="card_info">
+										<div class="info_name info_text"><strong>菜鸟驿站</strong></div>
+										<p class="info_describe info_text">菜鸟教程提供了基础编程技术教程</p>
+									</div>
+								</div>
+							</a> -->
+						</div>
+					</div>
+				<!-- 核心部分 -->
+				<div class="tb_main">
+					<!-- 学习网站 -->
+					<h2 class="tb_text">
+						<i id="study" class="fa fa-book" id="bookmark1"></i>
+						学习网站
+					</h2>
+					<!-- 卡片栏 -->
+					<div class="tool_card">
+						<a href="https://www.runoob.com/" target="_blank" class="card_href" title="菜鸟教程">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/runoob.jpeg" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>菜鸟教程</strong></div>
+									<p class="info_describe info_text">提供高质量基础编程技术教程</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://www.csdn.net/" target="_blank" class="card_href" title="CSDN">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/CSDN.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>CSDN</strong></div>
+									<p class="info_describe info_text">全球知名中文开发者网站</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://www.icourse163.org/" target="_blank" class="card_href" title="中国大学MOOC">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/MOOC.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>中国大学MOOC</strong></div>
+									<p class="info_describe info_text">高教社推出的在线教育平台</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://scholar.google.com/" target="_blank" class="card_href" title="Google学术">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/Google.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>Google学术</strong></div>
+									<p class="info_describe info_text">用于免费搜索学术文章</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://github.com/" target="_blank" class="card_href" title="GitHub">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/Github.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>GitHub</strong></div>
+									<p class="info_describe info_text">全球领先的代码管理平台</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://www.allhistory.com/" target="_blank" class="card_href" title="全历史">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/allhistory.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>全历史</strong></div>
+									<p class="info_describe info_text">不一样的了解历史的方式</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://wantwords.net/" target="_blank" class="card_href" title="WantWords">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/wantwords.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>WantWords</strong></div>
+									<p class="info_describe info_text">清华大学出品的汉语反向词典</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://www.liaoxuefeng.com/" target="_blank" class="card_href" title="廖雪峰的官方网站">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/liaoxuefeng.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>廖雪峰的官方网站</strong></div>
+									<p class="info_describe info_text">廖雪峰老师的编程语言教程</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://codepen.io/" target="_blank" class="card_href" title="CodePen">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/codepen.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>CodePen</strong></div>
+									<p class="info_describe info_text">前端设计开发人员的社交</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://www.twle.cn/" target="_blank" class="card_href" title="简单教程">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/twle.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>简单教程</strong></div>
+									<p class="info_describe info_text">简单教程编程IT入门首选站</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://www.bookstack.cn/" target="_blank" class="card_href" title="书栈网">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/bookstack.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>书栈网</strong></div>
+									<p class="info_describe info_text">开源书籍和文档分享站点</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://www.freecodecamp.org/" target="_blank" class="card_href" title="freeCodeCamp">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/freecodecamp.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>freeCodeCamp</strong></div>
+									<p class="info_describe info_text">编程刷题网站</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://www.xda-developers.com/" target="_blank" class="card_href" title="XDA">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/XDA.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>XDA</strong></div>
+									<p class="info_describe info_text">搞机社区数码产品资讯网</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- 工具网站 -->
+					<h2 class="tb_text">
+						<i id="tool" class="fa fa-download" id="bookmark2"></i>
+						工具网站
+					</h2>
+					<!-- 卡片栏 -->
+					<div class="tool_card">
+						<a href="https://www.ghxi.com/" target="_blank" class="card_href" title="果核剥壳">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/ghxi.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>果核剥壳</strong></div>
+									<p class="info_describe info_text">将绿化修改的软件分享给大众</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://www.52pojie.cn/" target="_blank" class="card_href" title="52破解">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/52pojie.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>52破解</strong></div>
+									<p class="info_describe info_text">老牌破解软件工具等社区网站</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://greasyfork.org/zh-CN/scripts" target="_blank" class="card_href" title="油猴脚本">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/greasyfork.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>油猴脚本</strong></div>
+									<p class="info_describe info_text">聚合大量脚本的浏览器插件</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://www.iconfont.cn/" target="_blank" class="card_href" title="Iconfont">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/iconfont.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>Iconfont</strong></div>
+									<p class="info_describe info_text">阿里巴巴矢量图标库</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://zhutix.com/" target="_blank" class="card_href" title="致美化">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/zhutix.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>致美化</strong></div>
+									<p class="info_describe info_text">专业的电脑桌面美化平台</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://web.baimiaoapp.com/" target="_blank" class="card_href" title="白描网页版">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/baimiaoapp.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>白描网页版</strong></div>
+									<p class="info_describe info_text">高效的中文OCR文字识别</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://www.qijishow.com/down/" target="_blank" class="card_href" title="奇迹秀">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/qijishow.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>奇迹秀</strong></div>
+									<p class="info_describe info_text">设计师必备首选网站</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://ziyouziti.com/" target="_blank" class="card_href" title="自由字体">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/ziyouziti.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>自由字体</strong></div>
+									<p class="info_describe info_text">收集全网免费商用字体</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://jamcz.com/" target="_blank" class="card_href" title="晨钟酱网络科技">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/jamcz.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>晨钟酱网络科技</strong></div>
+									<p class="info_describe info_text">晨钟酱工具箱和实用的小软件</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- 影视网站 -->
+					<h2 class="tb_text">
+						<i id="Movies" class="fa fa-video-camera" id="bookmark3"></i>
+						影视网站
+					</h2>
+					<!-- 卡片栏 -->
+					<div class="tool_card">
+						<a href="www.bilibili.com" target="_blank" class="card_href" title="哔哩哔哩">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/bilibili.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>哔哩哔哩</strong></div>
+									<p class="info_describe info_text">你喜欢的东西都在小破站~</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://cupfox.app/" target="_blank" class="card_href" title="茶杯狐">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/cupfox.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>茶杯狐</strong></div>
+									<p class="info_describe info_text">在线、下载电影网站聚合站</p>
+								</div>
+							</div>
+						</a>
+						<a href="http://pilipali.cc/" target="_blank" class="card_href" title="pilipali">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/pilipali.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>pilipali</strong></div>
+									<p class="info_describe info_text">日剧美剧动漫电影应有尽有</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://gimy.cc/" target="_blank" class="card_href" title="gimy">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/gimy.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>gimy</strong></div>
+									<p class="info_describe info_text">电影韩剧电视剧网站</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://www.youtube.com/" target="_blank" class="card_href" title="YouTube">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/youtube.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>YouTube</strong></div>
+									<p class="info_describe info_text">全球最大的影片搜索分享平台</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://www.h9t.cc/" target="_blank" class="card_href" title="韩剧网">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/h9t.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>韩剧网</strong></div>
+									<p class="info_describe info_text">分享快乐的韩剧网站</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- 图片网站 -->
+					<h2 class="tb_text">
+						<i id="picture" class="fa fa-picture-o" id="bookmark4"></i>
+						图片网站
+					</h2>
+					<!-- 卡片栏 -->
+					<div class="tool_card">
+						<a href="https://wallroom.io/" target="_blank" class="card_href" title="Wallroom">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/wallroom.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>Wallroom</strong></div>
+									<p class="info_describe info_text">高清壁纸分享</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://wallhaven.cc/" target="_blank" class="card_href" title="Wallhaven">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/wallhaven.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>Wallhaven</strong></div>
+									<p class="info_describe info_text">包含各种内容的高清壁纸</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://pixiviz.pwp.app/" target="_blank" class="card_href" title="Pixiviz">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/pixiviz.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>Pixiviz</strong></div>
+									<p class="info_describe info_text">知名蓝色站点的免翻搜索站</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://pixiv50.com/" target="_blank" class="card_href" title="Pixiv50">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/pixiv50.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>Pixiv50</strong></div>
+									<p class="info_describe info_text">每天分享Pixiv最佳Top50</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://www.logosc.cn/" target="_blank" class="card_href" title="标小智">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/logosc.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>标小智</strong></div>
+									<p class="info_describe info_text">免费版权图片，AI制作logo</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://www.cc0.cn/" target="_blank" class="card_href" title="CC零">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/cc0.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>CC零</strong></div>
+									<p class="info_describe info_text">方便的免费图片的平台</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://www.uupoop.com/" target="_blank" class="card_href" title="在线PS修图">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/uupoop.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>在线PS修图</strong></div>
+									<p class="info_describe info_text">在线图片照片处理网站</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://pxhere.com/" target="_blank" class="card_href" title="PxHere">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/pxhere.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>PxHere</strong></div>
+									<p class="info_describe info_text">世界最著名的免费摄影图库</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- 音乐网站 -->
+					<h2 class="tb_text">
+						<i id="music" class="fa fa-music" id="bookmark5"></i>
+						音乐网站
+					</h2>
+					<!-- 卡片栏 -->
+					<div class="tool_card">
+						<a href="https://listen1.github.io/listen1/" target="_blank" class="card_href" title="Listen">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/listen1.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>Listen</strong></div>
+									<p class="info_describe info_text">解除正版限制的音乐播放器</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://www.rainymood.com/" target="_blank" class="card_href" title="Rainymood">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/rainymood.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>Rainymood</strong></div>
+									<p class="info_describe info_text">雨声白噪声</p>
+								</div>
+							</div>
+						</a>
+						<a href="http://www.acgjc.com/" target="_blank" class="card_href" title="ACG漫音社">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/acgjc.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>ACG漫音社</strong></div>
+									<p class="info_describe info_text">分享ACG的HIRES音乐平台</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://www.ear0.com/" target="_blank" class="card_href" title="耳聆网">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/ear0.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>耳聆网</strong></div>
+									<p class="info_describe info_text">免费声音音频下载网站</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- 小说网站 -->
+					<h2 class="tb_text">
+						<i id="bookmark" class="fa fa-bookmark-o" id="bookmark6"></i>
+						小说网站
+					</h2>
+					<!-- 卡片栏 -->
+					<div class="tool_card">
+						<a href="http://www.xysudu.com/" target="_blank" class="card_href" title="小鱼速读">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/xysudu.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>小鱼速读</strong></div>
+									<p class="info_describe info_text">更新B站热门图书解读</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://www.esjzone.cc/list/" target="_blank" class="card_href" title="ESJ Zone">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/esjzone.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>ESJ Zone</strong></div>
+									<p class="info_describe info_text">轻小说分享平台</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://masiro.me/" target="_blank" class="card_href" title="真白萌">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/masiro.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>真白萌</strong></div>
+									<p class="info_describe info_text">日本轻小说免费分享平台</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- 网盘网站 -->
+					<h2 class="tb_text">
+						<i id="netdisk" class="fa fa-cloud-download" id="bookmark6"></i>
+						网盘网站
+					</h2>
+					<!-- 卡片栏 -->
+					<div class="tool_card">
+						<a href="https://www.wenshushu.cn" target="_blank" class="card_href" title="文叔叔">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/wenshushu.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>文叔叔</strong></div>
+									<p class="info_describe info_text">传文件找文叔叔永不限速</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://airportal.cn/" target="_blank" class="card_href" title="AirPortal">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/airportal.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>AirPortal</strong></div>
+									<p class="info_describe info_text">小文件面对面传输不限速</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://tmp.link/" target="_blank" class="card_href" title="钛盘">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/tmp.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>钛盘</strong></div>
+									<p class="info_describe info_text">超好用的文件中转站</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://www.lanzou.com/" target="_blank" class="card_href" title="蓝奏·云">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/lanzou.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>蓝奏·云</strong></div>
+									<p class="info_describe info_text">小文件存储不限速无限存储</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://cowtransfer.com/" target="_blank" class="card_href" title="奶牛快传">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/cowtransfer.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>奶牛快传</strong></div>
+									<p class="info_describe info_text">大文件传输不限速需要登录</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://www.aliyundrive.com/" target="_blank" class="card_href" title="阿里云盘">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/aliyundriive.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>阿里云盘</strong></div>
+									<p class="info_describe info_text">限制存储容量、下载不限速</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://pan.baidu.com/" target="_blank" class="card_href" title="百度云盘">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/panbaidu.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>百度云盘</strong></div>
+									<p class="info_describe info_text">不多介绍，用户数量大</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- 游戏资讯 -->
+					<h2 class="tb_text">
+						<i id="gamepad" class="fa fa-gamepad" id="bookmark7"></i>
+						游戏资讯
+					</h2>
+					<!-- 卡片栏 -->
+					<div class="tool_card">
+						<a href="https://gamekegs.com/" target="_blank" class="card_href" title="GameKegs">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/gamekegs.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>GameKegs</strong></div>
+									<p class="info_describe info_text">最全最方便的下载资料站(暂寄)</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://truckgame.cn/" target="_blank" class="card_href" title="TruckGame">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/truckgame.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>TruckGame</strong></div>
+									<p class="info_describe info_text">兴趣使然的游戏分享小站</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://bbs.nga.cn/" target="_blank" class="card_href" title="NGA玩家社区">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/bbs.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>NGA玩家社区</strong></div>
+									<p class="info_describe info_text">专业的游戏玩家社区</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://www.gamer.com.tw/" target="_blank" class="card_href" title="巴哈姆特">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/gamer.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>巴哈姆特</strong></div>
+									<p class="info_describe info_text">华人最大动漫以及游戏社群</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://www.miyoushe.com/" target="_blank" class="card_href" title="米游社">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/miyoushe.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>米游社</strong></div>
+									<p class="info_describe info_text">miHoYo旗下游戏玩家社区</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- ACG网站 -->
+					<h2 class="tb_text">
+						<i id="cube" class="fa fa-cube" id="bookmark8"></i>
+						ACG网站
+					</h2>
+					<!-- 卡片栏 -->
+					<div class="tool_card">
+						<a href="https://zh.moegirl.org.cn/" target="_blank" class="card_href" title="萌娘百科">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/moegirl.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>萌娘百科</strong></div>
+									<p class="info_describe info_text">主要收录acg及相关网络文化</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://bangumi.moe/" target="_blank" class="card_href" title="萌番组">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/bangumi.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>萌番组</strong></div>
+									<p class="info_describe info_text">最新动漫资源种子站</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://aniopen.an-i.workers.dev/" target="_blank" class="card_href" title="ANi Open">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/aniopen.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>ANi Open</strong></div>
+									<p class="info_describe info_text">ACG动漫分享下载站点</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://masiro.me/" target="_blank" class="card_href" title="真白萌">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/masiro.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>真白萌</strong></div>
+									<p class="info_describe info_text">日本轻小说免费分享平台</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://www.tsdm39.net/" target="_blank" class="card_href" title="天使动漫">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/tsdm39.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>天使动漫</strong></div>
+									<p class="info_describe info_text">能轻松聊天结识同好温馨论坛</p>
+								</div>
+							</div>
+						</a>
+						<a href="http://www.acgjc.com/" target="_blank" class="card_href" title="ACG漫音社">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/acgjc.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>ACG漫音社</strong></div>
+									<p class="info_describe info_text">分享ACG的HIRES音乐平台</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://nyaa.si/" target="_blank" class="card_href" title="Nyaa">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/nyaa.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>Nyaa</strong></div>
+									<p class="info_describe info_text">日轻动漫音乐等资源种子下载</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://share.dmhy.org/" target="_blank" class="card_href" title="动漫花园">
+							<div class="card_body">
+								<div class="card_img_box"><img src="images/share.png" id="card_img" height="auto"></div>
+								<div class="card_info">
+									<div class="info_name info_text"><strong>动漫花园</strong></div>
+									<p class="info_describe info_text">动漫花园资源网是动漫爱好者交流的平台,提供最及时,最全面的动画,漫画,动漫音乐,动漫下载</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<!-- 底部部分 -->
+				<div class="tb_bottom">
+					<div class="bottom_box">
+						<!-- 底部LOGO -->
+						<div class="bottom_Logo" id="End">
+							<a href="#" class="Logo_img" title="Tool-box">
+								<img src="images/Logo.png" id="Logo_img" height="auto">
+							</a>
+							<div class="Logo_describe">Tool-box收录了我们收藏的各类网站，
+							通过这类网站能够更好的提高工作效率，并且省下植发的金钱以及时间</div>
+						</div>
+						<!-- 注明作者 -->
+						<div class="bottom_center">
+							<div class="joke_text">
+								广东轻工职业技术学校
+								<br />
+								信息技术学院、计算机223
+								<br />
+								页面设计：李俊佑 2022230801225
+								<br />
+								JS动画：余健安 2022230801245
+								<br />
+								Edit：2022.12.18
+							</div>
+						</div>
+						<!-- 底部二维码 -->
+						<div class="bottom_end">
+							<a href="https://t.me/+8Mv9wOvCifdjOWRl" class="Logo_QR" title="Telegram群组">
+								<img src="images/QRcode.png" id="Logo_QR" height="auto">
+							</a>
+							<div class="QR_text">Telegram群组</div>
+						</div>
+						<!-- 底部整活 -->
+						<div class="bottom_other">
+							<img src="images/joke.png" id="Logo_joke" height="auto">
+							<div class="joke_text">做网页会秃的</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			var btn = document.getElementById("minibutton") == 0;
+			var btnSleft = document.getElementById("Sleft");
+			var inconfont_text = document.getElementsByClassName("Sleft_menu");
+			var Sleft_span_display = document.getElementsByClassName("Sleft_span");
+			var sleft_img_left = document.getElementsByClassName("Sleft_href_point");
+			var logo_img_action = document.getElementById("logo_img");
+			var logo_text_action =document.getElementById("logo_text");
+			var sleft_main = document.getElementsByClassName("main")[0];
+			var card_href_width = document.getElementsByClassName("card_href");
+			function Telescoping(){
+				if(btn==0){
+						for (i = 0; i < Sleft_span_display.length; i++) {
+							// Sleft_span_display[i].style.transition = "display 1s";
+							Sleft_span_display[i].style.display = "none";
+					    }
+						for (i = 0; i < card_href_width.length; i++) {
+							// Sleft_span_display[i].style.transition = "display 1s";
+							card_href_width[i].style.width = "250px";
+						}
+					btnSleft.style.transition = "width 0.5s,display 0.8s"
+					logo_img_action.transition = "display 0.8s"
+					logo_text_action.transition = "display 0.8s"
+					logo_img_action.style.display = "inline"
+					logo_text_action.style.display = "none"
+					btnSleft.style.width = "80px";
+					sleft_main.style.marginLeft = "120px";
+					btnSleft.style.overflow = "hidden";
+					// inconfont_text.style.background = "red";
+						for (i = 0; i < sleft_img_left.length; i++) {
+							sleft_img_left[i].style.left = "5px";
+						}
+					return btn=true;
+				}
+				else{
+					btnSleft.style.transition = "width 0.8s,display 0.8s"
+					logo_img_action.transition = "display 0.8s"
+					logo_text_action.transition = "display 0.8s"
+					btnSleft.style.width = "300px";
+					sleft_main.style.marginLeft = "230px";
+					logo_img_action.style.display = "none"
+					logo_text_action.style.display = "inline"
+					for (i = 0; i < Sleft_span_display.length; i++) {
+						// Sleft_span_display[i].style.transition = "all 1s";
+						Sleft_span_display[i].style.display = "inline";
+					}
+					for (i = 0; i < card_href_width.length; i++) {
+						// Sleft_span_display[i].style.transition = "display 1s";
+						card_href_width[i].style.width = "230px";
+					}
+					for (i = 0; i < sleft_img_left.length; i++) {
+						sleft_img_left[i].style.left = "-5px";
+					}
+					return btn=false;
+				}
+			}
+		</script>
+	</body>
+</html>

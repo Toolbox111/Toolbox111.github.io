@@ -1,0 +1,376 @@
+html, body { scroll-behavior:smooth; }
+.main {
+	/* background-color: #f9f9f9;
+	width: 1500px;
+	max-height: 100%;
+	max-width: 100%; */
+	/* padding-right: 15px;
+	padding-left: 15px; */
+	/* margin-left: 175px;
+	margin-right: auto;
+	overflow: hidden; */
+	background-color: #f9f9f9;
+	max-width: 100%;
+	margin-left: 210px;
+	margin-right: 0;
+	transition: all 0.5s;
+	/* 修改 */
+	}
+/*--------------------------------------------------------------
+## head style
+--------------------------------------------------------------*/
+.tb_head {
+	/* width: 98%; */
+	/* height: 1%; */
+	max-height: 100%;
+	font: 50px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	padding-bottom: 15px;
+	background-color: #f9f9f9;
+	/* background-image: url(images/header.png);
+	background-position: 0 27%;
+	background-size: cover; */
+	text-align: center;
+	opacity: 55%;
+	margin-left: 20px;
+	display: block;
+	/* position: relative;
+	display: flex; */
+}
+.head_text {
+	/* width: 30%; */
+	padding-top: 30px;
+	padding-left: 20px;
+}
+.head_search {
+	max-width: 800px;
+	/* height: 2%; */
+	max-height: 100%;
+	padding-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+/* 	padding-top: 30px;
+	background-color: #F9F9F9; */
+}
+.head_search_box {
+	position: relative;
+	display: flex;
+	/* margin: auto; */
+	/* float: right; */
+	/* padding-right: 20px; */
+	transition: transform 0.5s;
+}
+.head_search_box:hover{transform: scale(1.05);}
+#head_search_bar {
+	width: 100%;
+	height: 50px;
+	font-size: 16px;
+	color: white;
+	border: 1px solid #c7c7c7;
+	background-color: #c7c7c7;
+	border-radius: 50px 0px 0px 50px;
+	padding-left: 10px;
+	outline: 0;
+}
+#head_search_button {
+	width: 40px;
+	height: 54px;
+	border: 1px solid #c7c7c7;
+	background-color: #c7c7c7;
+	border-radius: 0px 50px 50px 0px;
+	color: white;
+	cursor: pointer;
+	font-size: 20px;
+}
+/*--------------------------------------------------------------
+## recommend style
+--------------------------------------------------------------*/
+.tb_recommend {
+	/* max-width: 100%; */
+	max-width: 2300px;
+	height: auto;	/* 修改 */
+	/* margin: 0 auto; */
+	/* max-height: 100%; */
+	/* margin-left: 20px; */
+	margin-left: auto;
+	margin-right: auto;
+}
+.recommend_card {
+	display: flex;
+	max-width: 100%;
+	height: auto;
+	top: 10px;
+	position: relative;
+	overflow: hidden;
+	flex-flow: row wrap;
+	margin-left: 20px;
+	margin-right: 30px;
+	/* justify-content: space-between; */
+}
+.recommend_href {
+	position: relative;
+	display: flex;
+	width: auto;
+	height: 300px;
+	background-color: white;
+	/* background-clip: border-box; */
+	margin-bottom: 20px;
+	border: 1px solid rgba(0,0,0,.125);
+	border-radius: 5px;
+	box-shadow: 0px 0px 20px -5px rgb(158 158 158 / 30%);
+	text-decoration: none;
+	flex: 1;	/* 修改 */
+	margin-right: 30px;		/* 修改 */
+}
+.recommend_text {
+	text-align:center;
+	color: #555;
+	font-size: 30px;
+}
+.tb_main {
+	max-width: 2300px;
+	margin-left: auto;
+	margin-right: auto;
+	scroll-behavior: smooth;
+}
+.tool_card {
+	top: 10px;
+	max-width: 100%;
+	display: flex;
+	margin-left: 20px;
+	/* width: 100%; */
+	position: relative;
+	/* padding-right: 15px;
+	padding-left: 15px; */
+	/* flex: 0 0 auto; */
+	flex-flow: row wrap;
+	flex: 1;
+	/* justify-content: space-around; */
+}
+.card_href {
+    position: relative;
+    display: flex;
+    /* flex-direction: row; */
+    width: 230px;
+    height: 80px;
+    background-color: white;
+	/* margin: auto 0; */
+	margin-right: 30px;
+    /* background-clip: border-box; */
+	margin-bottom: 30px;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 5px;
+	box-shadow: 0px 0px 20px -5px rgb(158 158 158 / 30%);
+	text-decoration: none;
+	transition: all 0.55s;
+}
+.card_href:hover{
+	/* 动画效果 */
+	transform: translateY(-10px);
+	box-shadow: 0 30px 50px -30px rgb(0 0 128 / 20%);
+}
+.card_body {
+	overflow: hidden;
+	display: flex;
+	/* flex: 1 1 auto; */
+	padding: 15px 10px 2px 15px;
+}
+.card_img_box {
+	width: 45px;
+	height: 45px;
+	/* max-width: 100%; */
+    /* max-height: 100%; */
+	flex: none;
+	border-radius: 50%;
+	overflow: hidden;
+	/* vertical-align:text-top; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#card_img {
+	max-height: 100%;
+	max-width:100%;
+	/* vertical-align: unset; */
+}
+.card_info {
+	/* overflow: hidden; */
+	overflow: auto;	/* 修改 */
+	padding-left: 10px;
+	/* flex: 1 1 auto; */
+	flex: none;
+}
+.card_info::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+}
+.info_text {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: block;
+	
+}
+.info_name {
+	font-size: 18px;
+	color: black;
+	transition: color 0.15s;
+}
+.info_name:hover{color: #fb7299;}
+.info_describe {
+	font-size: 10px;
+	color: #C7C7C7;
+}
+.recommend_body {
+	/* width: 20%;
+	height: 300px; */
+	width: auto;	/* 修改 */
+	height: auto;	/* 修改 */
+	overflow: hidden;
+	/* display: flex; */
+	display: block;		/* 修改 */
+	margin: auto;	/* 修改 */
+	padding: 0px 5px;
+	align-items: center;
+}
+.recommend_img_box {
+	width: 45px;
+	height: 45px;
+	flex: none;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* .recommend_info {
+	width: 150px;
+	height: 300px;
+	font-size: 15px;
+	color: #C7C7C7;
+	text-decoration: none;
+} */
+.recommend_info {
+	/* width: 80%; */
+	width: auto;	/* 修改 */
+	padding-top: 10px;
+	padding-bottom: 10px;
+	flex: 1;	/* 修改 */
+}
+.recommend_name {
+	font-size: 20px;
+	text-align: center;
+	padding-right: 20px;
+	padding-top: 5px;
+}
+.recommend_introduce {
+	font-size: 15px;
+	color: #C7C7C7;
+	line-height: 24px;
+	padding-left: 0px;
+	padding-right: 15px;
+	overflow: hidden;
+}
+.recommend_introduce:hover{color: #fb7299;}
+/*--------------------------------------------------------------
+## main style
+--------------------------------------------------------------*/
+.tb_text {
+	text-align:center;
+	color: #555;
+	font-size: 30px;
+}
+/*--------------------------------------------------------------
+## bottom style
+--------------------------------------------------------------*/
+.tb_bottom {
+	background-color: #f9f9f9; 
+	width: 100%;
+	height: 200px;
+	top: 20px;
+	display: flex;
+	position: relative;
+	/* flex-flow: row wrap;
+	justify-content: space-around; */
+}
+.bottom_box {
+	width: 85%;
+	height: 180px;
+	background-color: #ffffff;
+	position: relative;
+	display: flex;
+	margin: 0 auto;
+	border: 1px solid rgba(0,0,0,.125);
+	border-radius: 5px;
+	box-shadow: 0px 0px 20px -5px rgb(158 158 158 / 20%);
+}
+.bottom_Logo {
+	display: flex;
+	flex-direction: column;
+}
+.Logo_img {
+	padding-left: 10px;
+}
+.Logo_describe {
+	font-size: 15px;
+	color: #C7C7C7;
+	width: 420px;
+	padding-left: 30px;
+	line-height: 25px;
+}
+.bottom_end {
+	position: relative;
+	display: flex;
+	margin: 20px 30px auto auto;
+	float: right;
+	flex-direction: column;
+}
+.Logo_QR {
+	border: 3px solid rgba(0,0,0,.125);
+	box-shadow: 0px 0px 20px -5px rgb(158 158 158 / 30%);
+	width: 90px;
+	border-radius: 5px;
+}
+#Logo_QR {
+	max-width: 100%;
+}
+.QR_text {
+	font-size: 15px;
+	color: #C7C7C7;
+	padding-top: 8px;
+}
+.bottom_other {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin: 21px 30px auto 0px;
+}
+#Logo_joke {
+	border: 3px solid rgba(0,0,0,.125);
+	box-shadow: 0px 0px 20px -5px rgb(158 158 158 / 30%);
+	width: 92px;
+	border-radius: 5px;
+}
+.joke_text {
+	font-size: 15px;
+	color: #C7C7C7;
+	padding-top: 8px;
+	padding-left: 5px;
+}
+.joke_text {
+	font-size: 15px;
+	color: #C7C7C7;
+	padding-top: 8px;
+	padding-left: 5px;
+}
+.bottom_center {
+	max-width: 500px;
+	margin: auto;
+}
+/* 调用svg通用定义 */
+.icon {
+	max-height: 22px;
+	max-width: 22px;
+	fill: currentColor;
+	/* overflow: hidden; */
+}
